@@ -15,13 +15,13 @@ public class Triangle implements Shape{
         this.sideC = sideC;
     }
 
-    public static void calculateArea() {
+    public double calculateArea() {
         double p=(this.sideA+this.sideB+this.sideC)/2.0;
-        double S = Math.scrt(p*(p-this.sideA)*(p-this.sideB)*(p-this.sideC));
+        double S = Math.sqrt(p*(p-this.sideA)*(p-this.sideB)*(p-this.sideC));
         return S;
     }
 
-    public static void calculatePerimeter() {
+    public double calculatePerimeter() {
         double P = this.sideA+this.sideB+this.sideC;
         return P;
     }

@@ -10,12 +10,12 @@ public class Rectangle implements Shape {
         this.width = width;
     }
 
-    public static void calculateArea() {
+    public double calculateArea() {
         double S = this.length * this.width;
         return S;
     }
 
-    public static void calculatePerimeter() {
+    public double calculatePerimeter() {
         double P = 2.0 * (this.width + this.length);
         return P;
     }
